@@ -44,9 +44,9 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
     @Bean
     public Docket docket() {
         ApiInfo apiInfo = new ApiInfoBuilder()
-                .title("苍穹外卖项目接口文档")
+                .title("外卖项目接口文档")
                 .version("2.0")
-                .description("苍穹外卖项目接口文档")
+                .description("外卖项目接口文档")
                 .build();
         Docket docket = new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo)
@@ -58,7 +58,7 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
     }
 
     /**
-     * 设置静态资源映射
+     * 设置静态资源映射.目的是让前端能通过 URL 访问后端项目中的静态资源（如 HTML、JS、CSS 等）
      * @param registry
      */
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {

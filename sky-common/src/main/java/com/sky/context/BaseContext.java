@@ -1,6 +1,7 @@
 package com.sky.context;
-
+//ThreadLocal处理方法
 public class BaseContext {
+
 
     public static ThreadLocal<Long> threadLocal = new ThreadLocal<>();
 
